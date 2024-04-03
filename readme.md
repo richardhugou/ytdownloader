@@ -1,5 +1,3 @@
-Certainly! Below is the content for a single text file (README.md) that includes instructions on how the script works and how to get it running. You can copy and paste this content into a file named README.md in your project directory.
-
 markdown
 Copy code
 # YouTube Video Downloader
