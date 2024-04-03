@@ -1,5 +1,4 @@
-markdown
-Copy code
+
 # YouTube Video Downloader
 
 This Python script allows you to download information about a YouTube video using the `pytube` library. Additionally, it provides the option to create a standalone executable using PyInstaller.
