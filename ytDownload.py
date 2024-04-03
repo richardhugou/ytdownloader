@@ -4,9 +4,9 @@ import os
 import tkinter as tk
 
 
-def download_video_info(video_url):
+def download_video_info(youtube_link):
     try:
-        yt = YouTube(video_url)
+        yt = YouTube(youtube_link)
         print("Title:", yt.title)
 
         if yt.views:
@@ -44,9 +44,6 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.withdraw()
 
-    youtube_link=simpledialog.askstring(Title="Insérer le lien de la vidéo ici")
-    if len(youtube_link) != 2:
-        print("Usage: python ytDownloader.py <YouTube video URL>")
-    else:
-        download_video_info(youtube_link)
+    youtube_link = simpledialog.askstring(title="Insérer le lien de la vidéo ici", prompt="")
+    download_video_info(youtube_link)
     root.destroy()
