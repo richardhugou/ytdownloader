@@ -30,7 +30,7 @@ pip install pytube
 3. Run the Script
 Using Python Interpreter:
 Copy code
-```python ytDownloader.py <YouTube video URL>```
+```python ytDownloader.py```
 Using Executable:
 If you want to use the standalone executable:
 
