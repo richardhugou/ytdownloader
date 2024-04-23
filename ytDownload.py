@@ -1,12 +1,11 @@
 from pytube import YouTube
-from sys import argv
+from tkinter import simpledialog, filedialog
 import os
 import tkinter as tk
 
-
-def download_video_info(youtube_link):
+def downloadvideoinfo(youtubelink):
     try:
-        yt = YouTube(youtube_link)
+        yt = YouTube(youtubelink)
         print("Title:", yt.title)
 
         if yt.views:
@@ -14,11 +13,13 @@ def download_video_info(youtube_link):
         else:
             print("Views information not available.")
 
-        # Get the highest resolution stream
-        stream = yt.streams.get_highest_resolution()
+        # Filter streams by resolution and get the highest resolution stream
+        stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
+
+        # Ask user to select download directory
+        download_path = filedialog.askdirectory(title="Select Download Directory")
 
         # Set the download path
-        download_path = r'D:\Scripts\ytDownloader\Downloads_youtube'
         file_name = stream.default_filename
         full_path = os.path.join(download_path, file_name)
 
@@ -29,8 +30,7 @@ def download_video_info(youtube_link):
             new_name = f"{base_name} ({counter}){extension}"
             full_path = os.path.join(download_path, new_name)
             counter += 1
-# how to had a print statement
-        
+
         # Download the video
         stream.download(download_path)
 
@@ -40,10 +40,9 @@ def download_video_info(youtube_link):
         print("An error occurred:", str(e))
 
 if __name__ == "__main__":
-    from tkinter import simpledialog
     root = tk.Tk()
     root.withdraw()
-
+    
     youtube_link = simpledialog.askstring(title="Insérer le lien de la vidéo ici", prompt="")
-    download_video_info(youtube_link)
+    downloadvideoinfo(youtube_link)
     root.destroy()
