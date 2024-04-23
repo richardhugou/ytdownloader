@@ -50,3 +50,6 @@ Notes
 Make sure to replace past in the tkinter simpledialog your ```<YouTube video URL>```. It doesn't work offline obviously.
 The script will display information about the video, and if you created an executable, you can run it directly.
 Feel free to customize the script and share your feedback or improvements!
+
+Improvments
+Age restricted content are not downloadable yet, my apologize on that matter
