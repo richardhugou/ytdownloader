@@ -18,7 +18,7 @@ This Python script allows you to download information about a YouTube video usin
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/yt-downloader.git
+git clone https://github.com/richardhugou/yt-downloader.git
 cd yt-downloader
 2. Install Dependencies
 bash
@@ -44,7 +44,6 @@ pyinstaller --onefile ytDownloader.py
 This will create an executable (ytDownload.exe) in the dist directory.
 
 Notes
-Make sure to replace <YouTube video URL> with the actual URL of the video you want to download.
-Ensure that you have an active internet connection.
+Make sure to replace past in the tkinter simpledialog your <YouTube video URL>. It doesn't work offline obviously.
 The script will display information about the video, and if you created an executable, you can run it directly.
 Feel free to customize the script and share your feedback or improvements!
