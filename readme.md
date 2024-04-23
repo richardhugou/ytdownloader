@@ -34,7 +34,6 @@ Copy code
 Using Executable:
 If you want to use the standalone executable:
 
-Navigate to the dist directory after creating the executable.
 Run ytDownload.exe and provide the YouTube video URL.
 
 4. Creating Executable with PyInstaller
@@ -45,6 +44,7 @@ pip install pyinstaller
 pyinstaller --onefile --noconsole ytDownloader.py
 ```
 This will create an executable (ytDownload.exe) in the dist directory.
+Navigate to the dist directory after creating the executable.
 
 Notes
 Make sure to replace past in the tkinter simpledialog your <YouTube video URL>. It doesn't work offline obviously.
