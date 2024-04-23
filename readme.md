@@ -19,7 +19,7 @@ This Python script allows you to download information about a YouTube video usin
 
 ```bash
 git clone https://github.com/richardhugou/ytdownloader.git
-cd yt-downloader
+cd ytdownloader
 ```
 2. Install Dependencies
 
