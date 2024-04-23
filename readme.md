@@ -47,6 +47,6 @@ This will create an executable (ytDownload.exe) in the dist directory.
 Navigate to the dist directory after creating the executable.
 
 Notes
-Make sure to replace past in the tkinter simpledialog your <YouTube video URL>. It doesn't work offline obviously.
+Make sure to replace past in the tkinter simpledialog your ```<YouTube video URL>```. It doesn't work offline obviously.
 The script will display information about the video, and if you created an executable, you can run it directly.
 Feel free to customize the script and share your feedback or improvements!
