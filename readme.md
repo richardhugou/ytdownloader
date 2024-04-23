@@ -24,10 +24,7 @@ cd ytdownloader
 2. Install Dependencies
 
 
-Copy code
-```bash
-pip install -r requirements.txt
-```
+
 3. Run the Script
 Using Python Interpreter:
 Copy code
