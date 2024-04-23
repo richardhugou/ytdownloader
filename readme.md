@@ -23,7 +23,9 @@ cd ytdownloader
 ```
 2. Install Dependencies
 
-
+```bash
+pip install pytube
+```
 
 3. Run the Script
 Using Python Interpreter:
