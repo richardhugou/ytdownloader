@@ -36,6 +36,7 @@ If you want to use the standalone executable:
 
 Navigate to the dist directory after creating the executable.
 Run ytDownload.exe and provide the YouTube video URL.
+
 4. Creating Executable with PyInstaller
 If you want to create a standalone executable:
 Copy code
